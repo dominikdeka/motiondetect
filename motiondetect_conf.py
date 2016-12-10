@@ -1,7 +1,7 @@
 mprofi_recipient = ''
 mprofi_message = 'wykryto ruch w piwnicy'
 mprofi_ref = ''
-
+mprofi_key=''
 gpio_pin = 18
 
 thingspeak_api_key = ''

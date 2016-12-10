@@ -19,7 +19,7 @@ def on_message(client, userdata, msg):
         print 'Topic: ', msg.topic+'\nMessage: '+str(msg.payload)
 	hour = time.strftime("%H")
         if msg.payload == "1" or ((int(hour) >= 24 or int(hour) <6) and msg.payload <> "3"):
-            connector = MprofiAPIConnector(api_token="a7d6628be113493ab85096bcd6408adb")
+            connector = MprofiAPIConnector(api_token=mprofi_key)
             connector.add_message(mprofi_recipient, mprofi_message)
             connector.send(mprofi_ref)
         client.disconnect()
